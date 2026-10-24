@@ -1,0 +1,44 @@
+[
+  {
+    "id": "policy_shipping",
+    "title": "Shipping and Delivery Policy",
+    "category": "Shipping",
+    "tags": ["shipping", "delivery", "timeline", "courier", "arrive", "dispatch", "track", "tracking"],
+    "content": "CALIA Shipping & Delivery Policy: Standard demo delivery estimate is 3 to 5 business days across domestic pin codes. Orders are processed and dispatched within 24 hours of order placement. Free standard shipping applies to all orders above ₹999; orders below ₹999 incur a flat ₹79 shipping charge. Express delivery (1-2 business days) is available in select metro areas. Note: CALIA is a student prototype storefront, so all order numbers, tracking links, and shipments are simulated for demonstration purposes and no physical parcel will be shipped."
+  },
+  {
+    "id": "policy_returns",
+    "title": "Returns and Refunds Policy",
+    "category": "Returns",
+    "tags": ["return", "returns", "refund", "refunds", "exchange", "window", "policy", "money back"],
+    "content": "CALIA 7-Day Return & Refund Policy: Eligible unused items in their original brand packaging with all accessories, cables, warranty cards, and tags intact may be returned within 7 calendar days of delivery. To initiate a return, customers contact CALIX support or visit the returns portal with their order ID. Once a return inspection is simulated as completed, simulated refunds are processed back to the original payment method within 5 to 7 business days. As CALIA is a fictional prototype, no monetary transactions or real refunds occur."
+  },
+  {
+    "id": "policy_damaged",
+    "title": "Damaged or Defective Items Protocol",
+    "category": "Support",
+    "tags": ["damaged", "broken", "defective", "not working", "cracked", "replacement", "dead on arrival"],
+    "content": "CALIA Damaged and Defective Product Support Protocol: If an item arrives damaged, scratched, or not functioning out of the box, customers must report it within 48 hours of delivery. CALIX assistant requests the customer's demo Order ID (e.g., #CAL-1029) and a brief description of the issue. A simulated express replacement request is automatically generated in the system. CALIX explains clearly to the customer that CALIA is a prototype and this is a simulated replacement request with no physical merchandise dispatched."
+  },
+  {
+    "id": "policy_billing_escalation",
+    "title": "Billing Issues & Duplicate Charge Escalation Protocol",
+    "category": "Billing",
+    "tags": ["duplicate", "charged twice", "double charge", "payment", "billing", "bank", "maya", "human specialist", "escalate"],
+    "content": "CALIA Billing Issues & Escalation Protocol: If a customer reports being charged twice, double payments, or billing discrepancies, the issue is flagged with Priority Level 1. Because automated AI cannot access financial accounts or payment gateways, CALIX immediately reassures the customer and escalates the ticket to Maya, CALIA's senior human billing and accounts specialist. The customer is advised to keep their banking transaction reference ID (UTR / RRN) ready. CALIX reminds the customer that CALIA is a student prototype so no actual charges have occurred."
+  },
+  {
+    "id": "policy_warranty",
+    "title": "Warranty and Repair Guidelines",
+    "category": "Warranty",
+    "tags": ["warranty", "guarantee", "repair", "service", "manufacturing defect", "covered"],
+    "content": "CALIA Hardware Warranty Guidelines: All brand new electronic products (headphones, smartwatches, speakers, cameras, tablets, keyboards, power banks) sold by CALIA come with a 1-Year Limited Manufacturer Warranty covering internal manufacturing and technical defects from the date of simulated purchase. The warranty covers motherboard faults, driver failures, battery degradation over 40%, and charging port defects. It does not cover accidental drops, intentional damage, unauthorized tampering, or liquid immersion beyond rated IP specifications."
+  },
+  {
+    "id": "policy_payment_methods",
+    "title": "Accepted Payment Methods & Checkout",
+    "category": "Payment",
+    "tags": ["payment methods", "upi", "credit card", "debit card", "emi", "cod", "cash on delivery", "checkout"],
+    "content": "Accepted Payment Options: In the CALIA demo experience, supported simulated payment options include UPI (Google Pay, PhonePe, Paytm), Credit & Debit Cards (Visa, Mastercard, RuPay), Net Banking, and Cash on Delivery (COD). No real credit card or bank details are collected or processed, and checkout is strictly for demonstration purposes."
+  }
+]

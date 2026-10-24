@@ -1,0 +1,16 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+
+# Secrets & Local Environment
+.env
+.env.local
+
+# macOS metadata
+.DS_Store
+
+# Cache
+knowledge/embeddings_cache.json

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "prod_1",
+    "name": "Aura Wireless Headphones",
+    "category": "Audio",
+    "price": 2499,
+    "original_price": 3499,
+    "rating": 4.6,
+    "tags": ["headphones", "audio", "bluetooth", "noise cancellation", "sound", "music"],
+    "content": "Aura Wireless Headphones (Audio category). Price: ₹2,499 (Discounted from ₹3,499, 28% off). Rating: 4.6/5 stars. Features: Active Noise Isolation, 40mm dynamic drivers, plush memory-foam ear cushions, foldable headband, 30-hour continuous playback battery, Type-C quick charging (10 mins gives 3 hours playback), built-in HD microphone for calls, Bluetooth 5.3 with dual-device multipoint pairing. In the box: Aura headphones, 3.5mm aux audio cable, USB-C braided charging cable, carry pouch, manual. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_2",
+    "name": "Pulse Smart Watch",
+    "category": "Wearables",
+    "price": 3299,
+    "original_price": 4999,
+    "rating": 4.4,
+    "tags": ["smartwatch", "watch", "wearables", "fitness", "heart rate", "health", "amoled"],
+    "content": "Pulse Smart Watch (Wearables category). Price: ₹3,299 (Discounted from ₹4,999, 34% off). Rating: 4.4/5 stars. Features: 1.78-inch vibrant AMOLED Always-On Display with 368x448 resolution, aluminum alloy casing, 7-day battery life on normal usage (14 days on power-saver mode), 24/7 continuous heart rate monitoring, SpO2 blood oxygen tracking, sleep stage analysis, 100+ fitness sport modes, 3ATM water resistance (splash and swim proof up to 30 meters), Bluetooth calling with built-in speaker and mic, interchangeable 22mm straps. Compatible with iOS and Android. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_3",
+    "name": "Nova Wireless Earbuds",
+    "category": "Audio",
+    "price": 1799,
+    "original_price": 2599,
+    "rating": 4.5,
+    "tags": ["earbuds", "tws", "audio", "budget", "wireless", "music"],
+    "content": "Nova Wireless Earbuds (Audio category). Price: ₹1,799 (Discounted from ₹2,599, 30% off). Rating: 4.5/5 stars. Features: Ultra-compact lightweight stem design (3.8g per earbud), 10mm titanium-coated drivers with punchy bass, Environmental Noise Cancellation (ENC) with quad microphones for clear calls, IPX5 sweat and water resistance, low-latency 50ms gaming mode, 24-hour total playback with pocket pebble charging case (6 hours per single charge), touch controls for music, volume and voice assistants. Fast pairing with Android and iOS. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_4",
+    "name": "Orbit Mini Speaker",
+    "category": "Audio",
+    "price": 1499,
+    "original_price": 2199,
+    "rating": 4.3,
+    "tags": ["speaker", "audio", "portable", "bluetooth", "mini speaker", "outdoor"],
+    "content": "Orbit Mini Speaker (Audio category). Price: ₹1,499 (Discounted from ₹2,199, 31% off). Rating: 4.3/5 stars. Features: 360-degree omnidirectional room-filling acoustic sound, 5W output with passive bass radiator, IP67 waterproof and dustproof exterior, durable silicone hanging loop for backpacks and bicycles, 10-hour playback on 50% volume, True Wireless Stereo (TWS) pairing allows pairing two Orbit speakers for stereo left/right audio. USB-C charging. Ideal for travel, desks, and outdoor picnics. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_5",
+    "name": "Snap Compact Camera",
+    "category": "Cameras",
+    "price": 8999,
+    "original_price": 10999,
+    "rating": 4.7,
+    "tags": ["camera", "photography", "photos", "video", "4k", "vlog"],
+    "content": "Snap Compact Camera (Cameras category). Price: ₹8,999 (Discounted from ₹10,999, 18% off). Rating: 4.7/5 stars. Features: Retro-inspired pocket body with physical analog dials, 20-Megapixel CMOS sensor, 4K UHD video recording at 30fps, 3.0-inch 180-degree flip LCD screen for vlogging and selfies, 4x optical zoom lens with digital image stabilization, built-in pop-up flash, built-in WiFi and Bluetooth for instant smartphone photo transfer, microSD card support up to 256GB. Rechargeable 1200mAh battery (approx 350 photos per charge). 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_6",
+    "name": "Flex Tablet",
+    "category": "Smart devices",
+    "price": 12499,
+    "original_price": 14999,
+    "rating": 4.5,
+    "tags": ["tablet", "smart devices", "screen", "work", "study", "drawing", "display"],
+    "content": "Flex Tablet (Smart devices category). Price: ₹12,499 (Discounted from ₹14,999, 16% off). Rating: 4.5/5 stars. Features: 10.4-inch 2K IPS Eye-Care display (2000x1200 resolution) with slim bezels, active stylus pen support for drawing and note-taking, Octa-Core high-efficiency processor, 6GB RAM + 128GB internal storage (expandable via microSD up to 512GB), quad stereo speakers tuned with Dolby Atmos, 7000mAh battery offering up to 12 hours video playback, 18W fast charging, dual cameras (8MP rear + 5MP front for video calls), running clean Android with desktop productivity mode. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_7",
+    "name": "Click Mechanical Keyboard",
+    "category": "Accessories",
+    "price": 2899,
+    "original_price": 3799,
+    "rating": 4.6,
+    "tags": ["keyboard", "accessories", "mechanical", "gaming", "typing", "rgb"],
+    "content": "Click Mechanical Keyboard (Accessories category). Price: ₹2,899 (Discounted from ₹3,799, 23% off). Rating: 4.6/5 stars. Features: 75% compact 84-key ANSI layout saving desk space, hot-swappable mechanical switch sockets (compatible with 3-pin and 5-pin Gateron/Cherry MX switches), pre-lubed tactile brown switches for satisfying quiet typing, per-key RGB backlighting with 18 dynamic lighting modes, triple connectivity (Bluetooth 5.0, 2.4GHz wireless dongle, and detachable braided USB-C cable), 3000mAh rechargeable battery lasting up to 200 hours without RGB, macOS and Windows layout toggle switch with extra keycaps included. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_8",
+    "name": "Charge 20K Power Bank",
+    "category": "Accessories",
+    "price": 1299,
+    "original_price": 1899,
+    "rating": 4.2,
+    "tags": ["power bank", "charger", "battery", "accessories", "portable battery", "fast charging"],
+    "content": "Charge 20K Power Bank (Accessories category). Price: ₹1,299 (Discounted from ₹1,899, 31% off). Rating: 4.2/5 stars. Features: Massive 20,000mAh high-density lithium-polymer battery capacity (charges an average smartphone 4 to 5 times), 22.5W Power Delivery (PD 3.0) and Quick Charge (QC 3.0) fast charging protocols, smart LED percentage display showing exact remaining battery, triple output ports (2x USB-A ports, 1x USB-C bidirectional fast charge port), airline travel approved, multi-layer circuit safety protection against over-voltage, short-circuit, and overheating. Matte scratch-resistant finish. 1-year CALIA warranty included."
+  }
+]
