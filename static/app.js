@@ -1,4 +1,4 @@
-const $=id=>document.getElementById(id);let cart={},speakOn=true;
+const $=id=>document.getElementById(id);let cart={},speakOn=localStorage.getItem("calia_voice")==="true";
 const items=[...document.querySelectorAll(".card")].map(c=>({id:+c.querySelector(".add").dataset.id,name:c.querySelector(".add").dataset.name,price:+c.querySelector(".add").dataset.price,img:c.querySelector("img").src}));
 let toastTimer;
 function toast(t){const el=$("toast");el.textContent=t;el.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove("show"),2000)}
@@ -53,7 +53,7 @@ async function send(text){
 $("send").onclick=()=>send();
 $("input").onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();send()}};
 document.querySelectorAll(".quick").forEach(b=>b.onclick=()=>send(b.textContent));
-$("voiceToggle").onclick=()=>{speakOn=!speakOn;$("voiceToggle").textContent=speakOn?"🔊":"🔇";toast(speakOn?"Voice replies on":"Voice replies off")};
+if($("voiceToggle")){$("voiceToggle").textContent=speakOn?"🔊":"🔇";$("voiceToggle").onclick=()=>{speakOn=!speakOn;localStorage.setItem("calia_voice",speakOn?"true":"false");$("voiceToggle").textContent=speakOn?"🔊":"🔇";toast(speakOn?"Voice replies on 🔊":"Voice replies off 🔇")}}
 if($("keyToggle")){$("keyToggle").onclick=()=>{
     let cur=localStorage.getItem("calia_api_key")||"";
     let val=prompt("Custom Groq or Gemini API Key (Default Groq key is already active on the server):",cur);
