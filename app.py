@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, request, jsonify
 from rag import RAGPipeline
+import auth_db
 
 app = Flask(__name__)
 rag_pipeline = RAGPipeline()
@@ -28,12 +29,106 @@ def chat():
     if not msg:
         return jsonify(reply="Please type a question or product inquiry!", sources=[])
     result = rag_pipeline.generate_response(msg, api_key=api_key)
+
+    # If user is authenticated, save chat exchange to user history
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip() or body.get("user_token", "")
+    user = auth_db.get_user_by_token(token)
+    if user:
+        auth_db.add_chat_history_for_user(user["email"], {"message": msg, "reply": result["reply"]})
+
     return jsonify(
         reply=result["reply"],
         sources=result["sources"],
         retrieval_mode=result.get("retrieval_mode", "Vector Search"),
         generator=result.get("generator", "Groq LLM")
     )
+
+# --- USER AUTHENTICATION & PROFILE ENDPOINTS ---
+
+@app.route("/api/auth/register", methods=["POST"])
+def api_register():
+    body = request.json or {}
+    res, err = auth_db.register_user(
+        body.get("name", ""),
+        body.get("email", ""),
+        body.get("password", "")
+    )
+    if err:
+        return jsonify(status="error", message=err), 400
+    return jsonify(status="ok", token=res["token"], user=res["user"])
+
+@app.route("/api/auth/login", methods=["POST"])
+def api_login():
+    body = request.json or {}
+    res, err = auth_db.authenticate_user(
+        body.get("email", ""),
+        body.get("password", "")
+    )
+    if err:
+        return jsonify(status="error", message=err), 401
+    return jsonify(status="ok", token=res["token"], user=res["user"])
+
+@app.route("/api/auth/me", methods=["GET"])
+def api_me():
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip()
+    user = auth_db.get_user_by_token(token)
+    if not user:
+        return jsonify(status="error", message="Not authenticated"), 401
+    return jsonify(status="ok", user=auth_db.get_public_user(user))
+
+@app.route("/api/auth/logout", methods=["POST"])
+def api_logout():
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip()
+    auth_db.logout_token(token)
+    return jsonify(status="ok")
+
+@app.route("/api/user/cards", methods=["POST"])
+def api_add_card():
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip()
+    user = auth_db.get_user_by_token(token)
+    if not user:
+        return jsonify(status="error", message="Not authenticated"), 401
+    body = request.json or {}
+    cards, err = auth_db.add_card_for_user(user["email"], body)
+    if err:
+        return jsonify(status="error", message=err), 400
+    return jsonify(status="ok", cards=cards)
+
+@app.route("/api/user/cards/<card_id>", methods=["DELETE"])
+def api_delete_card(card_id):
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip()
+    user = auth_db.get_user_by_token(token)
+    if not user:
+        return jsonify(status="error", message="Not authenticated"), 401
+    cards, err = auth_db.delete_card_for_user(user["email"], card_id)
+    return jsonify(status="ok", cards=cards)
+
+@app.route("/api/user/orders", methods=["POST"])
+def api_place_order():
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip()
+    user = auth_db.get_user_by_token(token)
+    if not user:
+        return jsonify(status="error", message="Not authenticated"), 401
+    body = request.json or {}
+    order, err = auth_db.add_order_for_user(user["email"], body)
+    if err:
+        return jsonify(status="error", message=err), 400
+    return jsonify(status="ok", order=order, orders=user.get("orders", []))
+
+@app.route("/api/user/history", methods=["GET"])
+def api_user_history():
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "").strip()
+    user = auth_db.get_user_by_token(token)
+    if not user:
+        return jsonify(status="error", message="Not authenticated"), 401
+    return jsonify(status="ok", orders=user.get("orders", []), chat_history=user.get("chat_history", []))
 
 @app.route("/rag/status", methods=["GET"])
 def rag_status():
