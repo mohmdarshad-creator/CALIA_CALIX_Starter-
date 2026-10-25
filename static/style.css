@@ -32,12 +32,13 @@
   --input-bg:#f6f0f8;
   --photo-bg:#f4edf8;
   --photo-blend:multiply;
-  --logo-mark-bg:linear-gradient(135deg, #fcedf4 0%, #eee4fa 48%, #e5effd 100%);
+  --logo-mark-bg:linear-gradient(135deg, #fff2f7 0%, #f7ebfc 30%, #ede3fd 65%, #e1effe 100%);
   --logo-mark-border:rgba(255, 255, 255, 0.95);
-  --logo-mark-shadow:0 4px 14px rgba(162, 126, 196, 0.22), 0 1px 3px rgba(100, 70, 130, 0.08), inset 0 1px 1px #ffffff;
-  --logo-mark-hover-shadow:0 8px 22px rgba(162, 126, 196, 0.35), 0 2px 6px rgba(100, 70, 130, 0.12), inset 0 1px 1px #ffffff;
-  --logo-c-color:#5a3877;
-  --logo-c-glow:rgba(126, 83, 153, 0.22);
+  --logo-mark-shadow:0 4px 16px rgba(162, 126, 196, 0.22), 0 1px 3px rgba(100, 70, 130, 0.08), inset 0 1px 1.5px #ffffff, inset 0 -1px 1px rgba(180, 140, 220, 0.15);
+  --logo-mark-hover-shadow:0 8px 24px rgba(162, 126, 196, 0.35), 0 2px 6px rgba(100, 70, 130, 0.12), inset 0 1px 1.5px #ffffff;
+  --logo-c-color:#532c6d;
+  --logo-c-gradient:linear-gradient(145deg, #4b2368 0%, #7d3d92 50%, #9e4785 100%);
+  --logo-c-glow:rgba(125, 61, 146, 0.28);
 }
 
 [data-theme="dark"]{
@@ -74,18 +75,19 @@
   --photo-bg:#1e1728;
   --photo-blend:normal;
   --logo-mark-bg:linear-gradient(135deg, #371e36 0%, #291b3f 50%, #1e2642 100%);
-  --logo-mark-border:rgba(216, 185, 247, 0.32);
-  --logo-mark-shadow:0 4px 18px rgba(160, 110, 230, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.16);
-  --logo-mark-hover-shadow:0 8px 24px rgba(185, 130, 255, 0.42), inset 0 1px 1px rgba(255, 255, 255, 0.22);
+  --logo-mark-border:rgba(216, 185, 247, 0.35);
+  --logo-mark-shadow:0 4px 20px rgba(160, 110, 230, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  --logo-mark-hover-shadow:0 8px 26px rgba(185, 130, 255, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.25);
   --logo-c-color:#ebd7ff;
-  --logo-c-glow:rgba(213, 160, 255, 0.5);
+  --logo-c-gradient:linear-gradient(145deg, #ffffff 0%, #ebd7ff 45%, #c89eff 100%);
+  --logo-c-glow:rgba(200, 158, 255, 0.55);
 }
 
 body{margin:0;background:var(--bg-page);color:var(--ink);font-family:"DM Sans",sans-serif;transition:background .3s ease,color .3s ease}
 button,input,textarea{font:inherit}
 button{cursor:pointer;border:0}
-header{height:78px;display:flex;align-items:center;gap:18px;padding:0 6%;background:var(--bg-header);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--border-color);transition:background .3s ease,border-color .3s ease}
-.logo{color:var(--ink-heading);text-decoration:none;display:inline-flex;align-items:center;gap:12px;letter-spacing:-0.5px;user-select:none;transition:opacity .2s ease}
+header{height:78px;display:flex;align-items:center;gap:18px;padding:0 3%;background:var(--bg-header);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--border-color);transition:background .3s ease,border-color .3s ease}
+.logo{color:var(--ink-heading);text-decoration:none;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;letter-spacing:0;user-select:none;flex-shrink:0;transition:opacity .2s ease}
 .logo:hover{opacity:.95}
 .logo-mark{
   width:42px;
@@ -102,33 +104,39 @@ header{height:78px;display:flex;align-items:center;gap:18px;padding:0 6%;backgro
   transition:transform .35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow .3s ease, background .3s ease, border-color .3s ease;
 }
 .logo:hover .logo-mark{
-  transform:translateY(-2px) scale(1.05) rotate(-2deg);
+  transform:translateY(-2px) scale(1.06);
   box-shadow:var(--logo-mark-hover-shadow);
 }
 .logo-mark-c{
   font-family:"Pinyon Script", "Alex Brush", "Parisienne", cursive;
-  font-size:35px;
+  font-size:36px;
   font-weight:400;
   line-height:1;
   color:var(--logo-c-color);
-  text-shadow:0 1px 8px var(--logo-c-glow);
+  background:var(--logo-c-gradient);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 2px 5px var(--logo-c-glow));
   transform:translateY(-1px);
   display:inline-block;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  transition:color .3s ease, text-shadow .3s ease;
+  transition:all .3s ease;
 }
-.logo-text{
-  font:800 24px/1.05 Manrope, sans-serif;
-  letter-spacing:-1px;
+.logo:hover .logo-mark-c{
+  transform:translateY(-1px) scale(1.05);
+}
+.logo-name{
+  font:800 11.5px/1 "Manrope", sans-serif;
+  letter-spacing:2.5px;
+  text-transform:lowercase;
   color:var(--ink-heading);
+  margin-top:1px;
+  transition:color .25s ease, letter-spacing .25s ease;
 }
-.logo-text small{
-  display:block;
-  font:500 10px "DM Sans", sans-serif;
-  color:var(--muted-light);
-  letter-spacing:0;
-  margin-top:2px;
+.logo:hover .logo-name{
+  color:var(--accent);
+  letter-spacing:3px;
 }
 header input{flex:1;max-width:440px;border:1px solid var(--border-color);outline:0;background:var(--input-bg);color:var(--ink);border-radius:12px;padding:12px 16px;font-size:12px;transition:background .3s ease,border-color .3s ease}
 header input:focus{border-color:var(--accent)}
@@ -350,9 +358,8 @@ footer{padding:25px 6%;border-top:1px solid var(--border-color);display:flex;jus
 
 /* Responsive adjustments */
 @media(max-width:850px){
-  header{padding:0 3%;gap:8px}
-  .logo-text{font-size:20px}
-  .logo-text small{display:none}
+  header{padding:0 2.5%;gap:8px}
+  .logo-name{font-size:10px;letter-spacing:2px}
   .header-actions{gap:6px}
   .action-icon-btn{width:36px;height:36px;font-size:15px}
   .cartbtn{padding:8px 12px;font-size:11px}
@@ -368,12 +375,11 @@ footer{padding:25px 6%;border-top:1px solid var(--border-color);display:flex;jus
   .banner .cta{margin-left:0}
 }
 @media(max-width:550px){
-  header{height:68px}
-  .logo{gap:7px}
-  .logo-mark{width:35px;height:35px;border-radius:10px}
+  header{height:68px;padding:0 10px;gap:8px}
+  .logo{gap:2px}
+  .logo-mark{width:34px;height:34px;border-radius:10px}
   .logo-mark-c{font-size:28px}
-  .logo-text{font-size:18px}
-  .logo-text small{display:none}
+  .logo-name{font-size:9.5px;letter-spacing:1.5px}
   header input{min-width:0;font-size:10px;padding:9px 8px}
   .action-icon-btn{width:34px;height:34px;font-size:14px}
   .cartbtn{padding:7px 10px;font-size:10.5px}

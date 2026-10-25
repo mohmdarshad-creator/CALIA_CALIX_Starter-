@@ -14,7 +14,15 @@ PRODUCTS = [
     {"id": 5, "name": "Snap Compact Camera", "cat": "Cameras", "price": 8999, "old": 10999, "rating": "4.7", "img": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=85"},
     {"id": 6, "name": "Flex Tablet", "cat": "Smart devices", "price": 12499, "old": 14999, "rating": "4.5", "img": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=85"},
     {"id": 7, "name": "Click Mechanical Keyboard", "cat": "Accessories", "price": 2899, "old": 3799, "rating": "4.6", "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=85"},
-    {"id": 8, "name": "Charge 20K Power Bank", "cat": "Accessories", "price": 1299, "old": 1899, "rating": "4.2", "img": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=85"}
+    {"id": 8, "name": "Charge 20K Power Bank", "cat": "Accessories", "price": 1299, "old": 1899, "rating": "4.2", "img": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=85"},
+    {"id": 9, "name": "Studio Pro ANC Headphones", "cat": "Audio", "price": 4999, "old": 6999, "rating": "4.8", "img": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=85"},
+    {"id": 10, "name": "Retro Vinyl Bluetooth Turntable", "cat": "Audio", "price": 5499, "old": 7299, "rating": "4.7", "img": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=85"},
+    {"id": 11, "name": "Lumen AMOLED Fitness Band", "cat": "Wearables", "price": 1999, "old": 2999, "rating": "4.5", "img": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&w=800&q=85"},
+    {"id": 12, "name": "Horizon Titanium Smart Ring", "cat": "Wearables", "price": 6499, "old": 8999, "rating": "4.9", "img": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=85"},
+    {"id": 13, "name": "Pocket 4K Vlog Gimbal Cam", "cat": "Cameras", "price": 14299, "old": 17999, "rating": "4.8", "img": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=85"},
+    {"id": 14, "name": "Retro Instant Film Camera", "cat": "Cameras", "price": 3799, "old": 4999, "rating": "4.6", "img": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=85"},
+    {"id": 15, "name": "Glow Sunrise Alarm & Lamp", "cat": "Smart devices", "price": 2899, "old": 3999, "rating": "4.7", "img": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85"},
+    {"id": 16, "name": "Nova 3-in-1 MagSafe Stand", "cat": "Smart devices", "price": 2199, "old": 3199, "rating": "4.6", "img": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=85"}
 ]
 
 @app.route("/")

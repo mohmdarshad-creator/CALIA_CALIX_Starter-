@@ -78,5 +78,85 @@
     "rating": 4.2,
     "tags": ["power bank", "charger", "battery", "accessories", "portable battery", "fast charging"],
     "content": "Charge 20K Power Bank (Accessories category). Price: ₹1,299 (Discounted from ₹1,899, 31% off). Rating: 4.2/5 stars. Features: Massive 20,000mAh high-density lithium-polymer battery capacity (charges an average smartphone 4 to 5 times), 22.5W Power Delivery (PD 3.0) and Quick Charge (QC 3.0) fast charging protocols, smart LED percentage display showing exact remaining battery, triple output ports (2x USB-A ports, 1x USB-C bidirectional fast charge port), airline travel approved, multi-layer circuit safety protection against over-voltage, short-circuit, and overheating. Matte scratch-resistant finish. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_9",
+    "name": "Studio Pro ANC Headphones",
+    "category": "Audio",
+    "price": 4999,
+    "original_price": 6999,
+    "rating": 4.8,
+    "tags": ["headphones", "anc", "audio", "noise cancelling", "studio", "pro", "over ear"],
+    "content": "Studio Pro ANC Headphones (Audio category). Price: ₹4,999 (Discounted from ₹6,999, 29% off). Rating: 4.8/5 stars. Features: Hybrid Active Noise Cancellation up to 42dB depth with transparency mode, custom 45mm beryllium drivers delivering studio-grade hi-res audio, plush protein leather earcups, low-latency Bluetooth 5.4 with LDAC & AAC codec support, up to 50 hours of battery life (35 hours with ANC enabled), ultra-fast charging (15 mins charge for 5 hours play). Includes hard travel case, USB-C cable, and 3.5mm coiled audio cord. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_10",
+    "name": "Retro Vinyl Bluetooth Turntable",
+    "category": "Audio",
+    "price": 5499,
+    "original_price": 7299,
+    "rating": 4.7,
+    "tags": ["turntable", "vinyl", "record player", "retro", "audio", "vintage", "bluetooth"],
+    "content": "Retro Vinyl Bluetooth Turntable (Audio category). Price: ₹5,499 (Discounted from ₹7,299, 25% off). Rating: 4.7/5 stars. Features: Vintage wooden suitcase design with solid brass accents, 3-speed belt-driven turntable (33 1/3, 45, 78 RPM), built-in dynamic stereo speakers, two-way Bluetooth (stream phone music through speakers or beam vinyl sound to external wireless speakers/headphones), RCA output for hi-fi amplifier setup, USB encoding to digitize vinyl to MP3. Auto-stop feature protects vinyl grooves. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_11",
+    "name": "Lumen AMOLED Fitness Band",
+    "category": "Wearables",
+    "price": 1999,
+    "original_price": 2999,
+    "rating": 4.5,
+    "tags": ["fitness band", "band", "tracker", "wearables", "amoled", "step counter", "heart rate"],
+    "content": "Lumen AMOLED Fitness Band (Wearables category). Price: ₹1,999 (Discounted from ₹2,999, 33% off). Rating: 4.5/5 stars. Features: 1.47-inch Curved AMOLED Color Display with 500 nits brightness, ultra-lightweight 16g curved ergonomic casing, 14-day battery life on a single magnetic charge, continuous 24/7 heart rate and blood oxygen (SpO2) monitor, stress and sleep tracking, 50+ sports workout modes, 5ATM water resistance up to 50 meters (swimming friendly). Notification alerts for WhatsApp, calls, and SMS. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_12",
+    "name": "Horizon Titanium Smart Ring",
+    "category": "Wearables",
+    "price": 6499,
+    "original_price": 8999,
+    "rating": 4.9,
+    "tags": ["smart ring", "ring", "wearables", "titanium", "sleep", "recovery", "health"],
+    "content": "Horizon Titanium Smart Ring (Wearables category). Price: ₹6,499 (Discounted from ₹8,999, 28% off). Rating: 4.9/5 stars. Features: Aerospace-grade titanium outer shell with hypoallergenic medical-grade inner resin, featherweight 3.5g design, clinical-accuracy optical sensors for heart rate, HRV (heart rate variability), body temperature trends, and deep sleep stages, 6 days of battery on single charge with sleek magnetic wireless charging dock, 100m water resistance (IP68). Syncs seamlessly with Apple Health & Google Fit via CALIA app with zero subscription fees. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_13",
+    "name": "Pocket 4K Vlog Gimbal Cam",
+    "category": "Cameras",
+    "price": 14299,
+    "original_price": 17999,
+    "rating": 4.8,
+    "tags": ["gimbal", "camera", "vlog", "4k", "pocket cam", "stabilizer", "creator", "video"],
+    "content": "Pocket 4K Vlog Gimbal Cam (Cameras category). Price: ₹14,299 (Discounted from ₹17,999, 21% off). Rating: 4.8/5 stars. Features: Integrated 3-axis mechanical gimbal stabilizer eliminating all handshake, 4K video recording at 60fps, 1/1.7-inch CMOS sensor with 120-degree ultra-wide angle FOV, AI Face & Object Tracking 3.0, 1.4-inch responsive OLED touchscreen, dual stereo noise-reduction microphones with wind filter, 140 minutes continuous recording time, USB-C direct smartphone connectivity for instant streaming. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_14",
+    "name": "Retro Instant Film Camera",
+    "category": "Cameras",
+    "price": 3799,
+    "original_price": 4999,
+    "rating": 4.6,
+    "tags": ["instant camera", "film camera", "polaroid", "retro", "cameras", "photo", "prints"],
+    "content": "Retro Instant Film Camera (Cameras category). Price: ₹3,799 (Discounted from ₹4,999, 24% off). Rating: 4.6/5 stars. Features: Classic pastel vintage aesthetics with textured grip, automatic exposure calculation for perfect lighting in any room, built-in selfie mirror on the lens barrel, close-up macro lens mode for detailed close shots from 30cm, automatic flash with rapid recycling, uses standard instant credit-card sized film sheets. Comes with pastel matching wrist strap, batteries, and 1-year CALIA warranty."
+  },
+  {
+    "id": "prod_15",
+    "name": "Glow Sunrise Alarm & Lamp",
+    "category": "Smart devices",
+    "price": 2899,
+    "original_price": 3999,
+    "rating": 4.7,
+    "tags": ["alarm", "sunrise", "lamp", "smart devices", "wake up light", "clock", "ambient"],
+    "content": "Glow Sunrise Alarm & Lamp (Smart devices category). Price: ₹2,899 (Discounted from ₹3,999, 28% off). Rating: 4.7/5 stars. Features: Clinically inspired circadian sunrise simulation that gradually brightens 30 minutes before your wakeup time, sunset wind-down relaxation mode, 7 soothing nature sounds (birds, ocean waves, gentle rain) and FM radio, RGB mood ambient lighting with 16 million colors and adjustable brightness levels, dual alarm schedules with tap-to-snooze function, integrated USB port to charge your phone bedside. 1-year CALIA warranty included."
+  },
+  {
+    "id": "prod_16",
+    "name": "Nova 3-in-1 MagSafe Stand",
+    "category": "Smart devices",
+    "price": 2199,
+    "original_price": 3199,
+    "rating": 4.6,
+    "tags": ["magsafe", "charger", "wireless charging", "stand", "smart devices", "apple", "iphone", "airpods"],
+    "content": "Nova 3-in-1 MagSafe Stand (Smart devices category). Price: ₹2,199 (Discounted from ₹3,199, 31% off). Rating: 4.6/5 stars. Features: Premium weighted aluminum and zinc alloy stand, fast 15W magnetic wireless charging pad for iPhone, dedicated 5W magnetic cradle for Apple Watch, and 5W recessed base pad for AirPods / wireless earbuds, strong N52 neodymium magnets allowing portrait or landscape phone positioning, intelligent temperature control and foreign object detection, clean single-cable desk setup. Includes 30W USB-C PD power adapter. 1-year CALIA warranty included."
   }
 ]
