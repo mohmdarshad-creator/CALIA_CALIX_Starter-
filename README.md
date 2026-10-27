@@ -31,3 +31,7 @@ CALIX is powered by an active RAG (Retrieval-Augmented Generation) pipeline inte
 - CALIX AI Chatbot with live RAG source inspection and Groq LLM integration.
 - Speech recognition and voice synthesis in supported browsers.
 - Simulated workflows for damaged goods and duplicate charges.
+
+## Demo Video & Project Links
+- **Demo Video Walkthrough**: [Watch on Google Drive](https://drive.google.com/drive/folders/1iJMWTiMqOoQKPO8pQ21XXfRjTWMm4pry?usp=sharing)
+- **GitHub Repository**: [https://github.com/mohmdarshad-creator/CALIA_CALIX_Starter-.git](https://github.com/mohmdarshad-creator/CALIA_CALIX_Starter-.git)
