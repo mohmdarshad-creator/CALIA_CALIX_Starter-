@@ -14,3 +14,6 @@ __pycache__/
 
 # Cache
 knowledge/embeddings_cache.json
+
+# Archives
+*.zip
